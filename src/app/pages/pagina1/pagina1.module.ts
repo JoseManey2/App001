@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { Pagina1Page } from './pagina1.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Pagina1PageRoutingModule
+    Pagina1PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Pagina1Page]
 })
