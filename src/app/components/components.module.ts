@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 
 @NgModule({
-  declarations: [EncabezadoComponent], 
-  exports: [EncabezadoComponent], 
+  declarations: [EncabezadoComponent ,FooterComponent], 
+  exports: [EncabezadoComponent, FooterComponent], 
   imports: [
     CommonModule,
     IonicModule
