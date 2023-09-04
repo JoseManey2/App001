@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,24 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+texto:string='';
+
+  constructor(private router:Router) {}
+
+  hacerClick()
+  {
+    this.texto="Hola Mundo"
+    console.log(this.texto);
+    this.router.navigate(['pagina1']);
+    if(this.texto!="")
+    {
+      console.log("No esta vacio");
+    }
+    else(this.texto!="")
+    {
+      console.log("");
+    }
+
+  }
 
 }
